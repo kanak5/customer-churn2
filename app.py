@@ -91,7 +91,7 @@ if submitted:
     st.markdown(f"**Churn Probability:** `{prob:.2%}`")
     st.progress(min(prob, 1.0))
 
-    if prob > 0.3:
+    if prob > 0.5:
         st.error("⚠️ This customer is likely to churn.")
     else:
         st.success("✅ This customer is unlikely to churn.")
